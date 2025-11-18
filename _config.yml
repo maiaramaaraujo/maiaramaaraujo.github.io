@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "masters-maiara_marcal.jpg"
   name             : "Maiara Marçal"
   pronouns         : # example: "she/her"  
   bio              : "Biomedical Engineer (UFPE, 2025), Master in Computer Science (PUC-Rio, currently)"
