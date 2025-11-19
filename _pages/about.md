@@ -22,13 +22,11 @@ I’m also building an interactive interface so neuroscientists, clinicians, and
 
 Some of the questions guiding my work include:
 
-***How is language represented — and produced — in the brain?***
+- ***How is language represented — and produced — in the brain?***
+- ***How does the brain articulate semantic content differently from syntactic or motor features?***
+- ***How can AI help us understand how humans acquire language and structure concepts?***
+- ***How can we build models that improve decoding while remaining interpretable and aligned with cognitive science?***
 
-***How does the brain articulate semantic content differently from syntactic or motor features?***
-
-***How can AI help us understand how humans acquire language and structure concepts?***
-
-***How can we build models that improve decoding while remaining interpretable and aligned with cognitive science?***
 
 In short: I’m exploring how brains build and use language — and how AI can help us reveal the structure behind these processes. If you’re interested in language, cognition, neural signals, or the messy beauty of how humans use language to think, learn and express ideas, I’m always excited to chat :) 
 
