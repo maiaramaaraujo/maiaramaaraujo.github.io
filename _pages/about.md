@@ -1,3 +1,12 @@
+---
+permalink: /
+title: "Maiara Marçal's website!"
+author_profile: true
+redirect_from: 
+- /about/
+- /about.html
+---
+
 hi!
 ======
 
