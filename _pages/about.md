@@ -7,8 +7,6 @@ redirect_from:
 - /about.html
 ---
 
-======
-
 I’m Maiara — a Biomedical Engineer from UFPE and currently a Master’s student in Computer Science at PUC-Rio. My research sits at the intersection of **neuroscience, language, and AI**, and I’m especially fascinated by how the brain transforms symbols, meanings, and actions into complex linguistic behavior.
 
 I’m currently investigating **how the brain represents and produces language** — not just perception, but also the internal processes of language production, acquisition, and even motor patterns that emerge when we think, plan, or structure language. My work uses machine learning to uncover how semantic, syntactic, and sensorimotor components are encoded in neural activity, particularly EEG.
