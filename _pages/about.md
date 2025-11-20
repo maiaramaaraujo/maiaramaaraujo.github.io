@@ -27,10 +27,9 @@ Some of the questions guiding my work include:
 In short: I’m exploring how brains build and use language — and how AI can help us reveal the structure behind these processes. If you’re interested in language, cognition, neural signals, or the messy beauty of how humans use language to think, learn and express ideas, I’m always excited to chat :) 
 
 ---
-
 <hr>
 <div style="margin: 0 auto; text-align: center;">
-  — <i>
+  <i>
     "(...) that your spirit grow in curiosity, that your life be richer than it is, that you bow to the earth as you feel how it actually is, that we—so clever, and ambitious, and selfish, and unrestrained— are only one design of the moving, the vivacious many"
   </i>
   
