@@ -30,9 +30,9 @@ In short: I’m exploring how brains build and use language — and how AI can h
 <div align="center">
 
 > — "(...) *that your spirit grow in curiosity, that your life be richer than it*
-*is, that you bow to the earth as you feel how it actually is, that we—so clever,*
+*is, that you bow to the earth as you feel how it actually is, that we —so clever,*
 *and ambitious, and selfish, and unrestrained— are only one design of the*
-*moving, the vivacious many*"
+*moving, the vivacious many.*"
 >
 > –– **The Moth, The Mountains, The Rivers**, Mary Olliver
 
