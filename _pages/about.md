@@ -10,7 +10,7 @@ redirect_from:
 
 I’m Maiara — a Biomedical Engineer from UFPE and currently a Master’s student in Computer Science at PUC-Rio. My research sits at the intersection of **neuroscience, language, and AI**, and I’m especially fascinated by how the brain transforms symbols, meanings, and actions into complex linguistic behavior.
 
-I’m currently investigating **how the brain represents and produces language** — not just perception, but also the internal processes of language production, acquisition, and even motor patterns that emerge when we think, plan, or structure language. My work uses machine learning to uncover how semantic, syntactic, and sensorimotor components are encoded in neural activity, particularly EEG.
+I’m currently investigating **how the brain represents and produces language** — not just perception, but also the internal processes of language production, acquisition, and even motor patterns that emerge when we think, plan, or structure language. My work uses **machine learning to uncover how semantic, syntactic, and sensorimotor components are encoded in neural activity, particularly EEG**.
 
 I’m developing a more human-centered and explainable framework that goes beyond standard brain-decoding pipelines. Instead of treating language as a single “black box” representation, I’m creating models that disentangle semantic meaning, syntactic structure, and sensorimotor features, shedding light on how these layers interact during language production and learning.
 
@@ -34,7 +34,7 @@ In short: I’m exploring how brains build and use language — and how AI can h
   </i>
   
   <div style="text-align: right; padding-right: 5em; margin-top: 0.5em;">
-    –– <i><b>The Moth, The Mountains, The Rivers</b>, Mary Olliver</i>
+    –– <i><b>The Moth, The Mountains, The Rivers</b>, Mary Oliver</i>
   </div>
 </div>
 
