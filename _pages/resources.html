@@ -1,64 +1,21 @@
 ---
-layout: page
-title: "resources"
+layout: archive
+title: "Resources"
 permalink: /resources/
 author_profile: true
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Resources</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .toggle {
-      border-radius: 10px;
-      margin-bottom: 15px;
-      overflow: hidden;
-      border: 1px solid #ddd;
-    }
-    .toggle summary {
-      padding: 15px;
-      cursor: pointer;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: white;
-    }
-    .toggle div {
-      background: #fafafa;
-      padding: 15px;
-    }
-    /* Color themes */
-    .neuro { background: #7a5cff; }
-    .ml { background: #00a6a6; }
-    .ling { background: #ff6f61; }
-    .hardware { background: #0084ff; }
-    .misc { background: #4caf50; }
+{% include base_path %}
 
-    a { color: #333; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-
-<h1>My Resources</h1>
+<div class="wordwrap">
 <p>This page gathers all articles, tutorials, tools, and links that I find useful throughout my research journey. Organized by topic, each section can be expanded using toggles for a cleaner reading experience.</p>
+</div>
 
-<!-- Neuro Section -->
+<hr />
+
+<!-- Neuroscience -->
 <details class="toggle">
-  <summary class="neuro">Neuroscience & EEG</summary>
+  <summary class="neuro">🔬 Neuroscience & EEG</summary>
   <div>
     <ul>
       <li><a href="#">EEG preprocessing tutorial (MNE-Python)</a></li>
@@ -70,7 +27,7 @@ author_profile: true
 
 <!-- Machine Learning -->
 <details class="toggle">
-  <summary class="ml">Machine Learning & XAI</summary>
+  <summary class="ml">🤖 Machine Learning & XAI</summary>
   <div>
     <ul>
       <li><a href="#">Explainable AI for clinicians – overview</a></li>
@@ -82,7 +39,7 @@ author_profile: true
 
 <!-- Linguistics -->
 <details class="toggle">
-  <summary class="ling">Linguistics, Speech & Language Processing</summary>
+  <summary class="ling">🗣 Linguistics, Speech & Language Processing</summary>
   <div>
     <ul>
       <li><a href="#">Phonological processing & EEG review</a></li>
@@ -94,7 +51,7 @@ author_profile: true
 
 <!-- Hardware -->
 <details class="toggle">
-  <summary class="hardware">Hardware, Sensors & BCI</summary>
+  <summary class="hardware">💡 Hardware, Sensors & BCI</summary>
   <div>
     <ul>
       <li><a href="#">Wemos D1 setup guide</a></li>
@@ -104,9 +61,9 @@ author_profile: true
   </div>
 </details>
 
-<!-- Misc -->
+<!-- Miscellaneous -->
 <details class="toggle">
-  <summary class="misc">Miscellaneous Useful Tools</summary>
+  <summary class="misc">🛠 Miscellaneous Useful Tools</summary>
   <div>
     <ul>
       <li><a href="#">LaTeX templates</a></li>
@@ -116,6 +73,31 @@ author_profile: true
   </div>
 </details>
 
-</body>
-</html>
+<style>
+/* Toggle styling consistent with Academic Pages */
+.toggle summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  color: white;
+}
+.toggle div {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Color themes */
+.neuro { background: #7a5cff; }
+.ml { background: #00a6a6; }
+.ling { background: #ff6f61; }
+.hardware { background: #0084ff; }
+.misc { background: #4caf50; }
+
+a { color: #333; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
 
