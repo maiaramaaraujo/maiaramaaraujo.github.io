@@ -1,0 +1,121 @@
+---
+layout: page
+title: "resources"
+permalink: /resources/
+author_profile: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resources</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .toggle {
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    .toggle summary {
+      padding: 15px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+    .toggle div {
+      background: #fafafa;
+      padding: 15px;
+    }
+    /* Color themes */
+    .neuro { background: #7a5cff; }
+    .ml { background: #00a6a6; }
+    .ling { background: #ff6f61; }
+    .hardware { background: #0084ff; }
+    .misc { background: #4caf50; }
+
+    a { color: #333; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<h1>My Resources</h1>
+<p>This page gathers all articles, tutorials, tools, and links that I find useful throughout my research journey. Organized by topic, each section can be expanded using toggles for a cleaner reading experience.</p>
+
+<!-- Neuro Section -->
+<details class="toggle">
+  <summary class="neuro">Neuroscience & EEG</summary>
+  <div>
+    <ul>
+      <li><a href="#">EEG preprocessing tutorial (MNE-Python)</a></li>
+      <li><a href="#">Article: Beta-band activity during motor tasks</a></li>
+      <li><a href="#">Feature extraction for cognitive neuroscience</a></li>
+    </ul>
+  </div>
+</details>
+
+<!-- Machine Learning -->
+<details class="toggle">
+  <summary class="ml">Machine Learning & XAI</summary>
+  <div>
+    <ul>
+      <li><a href="#">Explainable AI for clinicians – overview</a></li>
+      <li><a href="#">Contrastive learning resources</a></li>
+      <li><a href="#">Jupyter notebooks for classification models</a></li>
+    </ul>
+  </div>
+</details>
+
+<!-- Linguistics -->
+<details class="toggle">
+  <summary class="ling">Linguistics, Speech & Language Processing</summary>
+  <div>
+    <ul>
+      <li><a href="#">Phonological processing & EEG review</a></li>
+      <li><a href="#">Prosody and neural markers</a></li>
+      <li><a href="#">Language models for linguistic analysis</a></li>
+    </ul>
+  </div>
+</details>
+
+<!-- Hardware -->
+<details class="toggle">
+  <summary class="hardware">Hardware, Sensors & BCI</summary>
+  <div>
+    <ul>
+      <li><a href="#">Wemos D1 setup guide</a></li>
+      <li><a href="#">DIY EEG hardware references</a></li>
+      <li><a href="#">Signal acquisition best practices</a></li>
+    </ul>
+  </div>
+</details>
+
+<!-- Misc -->
+<details class="toggle">
+  <summary class="misc">Miscellaneous Useful Tools</summary>
+  <div>
+    <ul>
+      <li><a href="#">LaTeX templates</a></li>
+      <li><a href="#">Python productivity tips</a></li>
+      <li><a href="#">Version control tutorials (Git)</a></li>
+    </ul>
+  </div>
+</details>
+
+</body>
+</html>
+
