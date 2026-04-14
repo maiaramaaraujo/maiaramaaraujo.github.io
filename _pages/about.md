@@ -12,15 +12,17 @@ I’m Maiara — a Biomedical Engineer from UFPE and currently a Master’s stud
 
 I’m currently investigating **how the brain represents and produces language** — not just perception, but also the internal processes of language production, acquisition, and even motor patterns that emerge when we think, plan, or structure language. My work uses **machine learning to uncover how semantic, syntactic, and sensorimotor components are encoded in neural activity, particularly EEG**.
 
-I’m developing a more human-centered and explainable framework that goes beyond standard brain-decoding pipelines. Instead of treating language as a single “black box” representation, I’m creating models that disentangle semantic meaning, syntactic structure, and sensorimotor features, shedding light on how these layers interact during language production and learning.
+A key challenge is bridging the gap between representation and explainability. High-performing models can decode neural signals, yet their explanations do not necessarily reflect the model’s true reasoning. My work addresses this issue by developing models in which interpretability is built into the representations themselves, making learned features directly accessible, structured, and meaningfully linked to neural and cognitive processes.
+
+I am developing a more human-centered framework that goes beyond standard brain-decoding pipelines. Rather than treating language as a single “black box,” these models disentangle semantic, syntactic, and sensorimotor components, providing a clearer view of how these layers interact during language production and learning.
 
 I’m also building an interactive interface so neuroscientists, clinicians, and educators can explore these neural–linguistic representations in a transparent and intuitive way — supporting new applications in human–machine interaction, assistive communication, and language learning technologies.
 
 Some of the questions guiding my work include:
 
 - ***How is language represented — and produced — in the brain?***
-- ***How does the brain articulate semantic content differently from syntactic or motor features?***
-- ***How can AI help us understand how humans acquire language and structure concepts?***
+- ***How are semantic, syntactic, and sensorimotor components of language represented in EEG signals, and how are these structures captured in learned model representations?***
+- ***To what extent do explainability methods faithfully capture the representations learned by these models?***
 - ***How can we build models that improve decoding while remaining interpretable and aligned with cognitive science?***
 
 
