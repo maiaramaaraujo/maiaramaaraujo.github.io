@@ -14,125 +14,122 @@ author_profile: true
 
 <hr />
 
-<!-- Books -->
-<details class="toggle">
-  <summary class="books">Books</summary>
-  <div>
-    <ul>
-      <li>
-        <a href="#">Thinking, Fast and Slow – Daniel Kahneman</a>
-        <br><span class="note">On decision-making and cognition</span>
-      </li>
-      <li>
-        <a href="#">The Stranger – Albert Camus</a>
-        <br><span class="note">Minimalism and existential perspective</span>
-      </li>
-    </ul>
-  </div>
-</details>
+<p class="section-title">Art & Media</p>
 
-<!-- Films -->
-<details class="toggle">
-  <summary class="films">Films</summary>
-  <div>
-    <ul>
-      <li>
-        <a href="#">Her (2013)</a>
-        <br><span class="note">Human–machine relationships</span>
-      </li>
-      <li>
-        <a href="#">Arrival (2016)</a>
-        <br><span class="note">Language and perception</span>
-      </li>
-    </ul>
-  </div>
-</details>
+<p class="category">Artists & Albums</p>
+<p class="items">
+<a href="#">The Definition – Jon Bellion</a> •
+<a href="#">Everybody – Logic</a> •
+<a href="#">Change of Scenery II – Quinn XCII</a> •
+<a href="#">Brol La Suite – Angèle</a> •
+<a href="#">Rainbow Mixtape – COIN</a>
+</p>
 
-<!-- Music -->
-<details class="toggle">
-  <summary class="music">Music</summary>
-  <div>
-    <ul>
-      <li>
-        <a href="#">Nick Drake – Pink Moon</a>
-        <br><span class="note">Quiet, introspective atmosphere</span>
-      </li>
-      <li>
-        <a href="#">Bon Iver – Holocene</a>
-      </li>
-    </ul>
-  </div>
-</details>
+<p class="highlight">
+<em><a href="#">Pink Moon – Nick Drake</a></em><br>
+<span class="note">quiet, introspective, and somehow always exactly enough</span>
+</p>
 
-<!-- Art + Gallery -->
-<details class="toggle">
-  <summary class="art">Art</summary>
-  <div>
+<p class="category">Film</p>
+<p class="items">
+<a href="#">La La Land</a> •
+<a href="#">A Quiet Place</a> •
+<a href="#">Good Will Hunting</a> •
+<a href="#">Spirited Away</a>
+</p>
 
-    <div class="gallery">
+<p class="highlight">
+<em><a href="#">Arrival</a></em><br>
+<span class="note">language, time, and the way meaning reshapes perception</span>
+</p>
 
-      <a href="https://example.com/art1" target="_blank" class="card">
-        <img src="/images/art1.jpg" alt="The Lovers – René Magritte">
-        <div class="overlay">The Lovers – René Magritte</div>
-      </a>
+<p class="category">Literature</p>
+<p class="items">
+<a href="#">Anne of Green Gables – Lucy Maud Montgomery</a> •
+<a href="#">The Haunting of Hill House – Shirley Jackson</a>
+</p>
 
-      <a href="https://example.com/art2" target="_blank" class="card">
-        <img src="/images/art2.jpg" alt="Impression, Sunrise – Claude Monet">
-        <div class="overlay">Impression, Sunrise – Claude Monet</div>
-      </a>
+<p class="highlight">
+<em><a href="#">The Stranger – Albert Camus</a></em><br>
+<span class="note">minimalism, detachment, and uncomfortable clarity</span>
+</p>
 
-      <a href="https://example.com/art3" target="_blank" class="card">
-        <img src="/images/art3.jpg" alt="Pink Moon – Nick Drake">
-        <div class="overlay">Pink Moon – Nick Drake</div>
-      </a>
+<hr />
 
-    </div>
+<p class="section-title">Visual Inspirations</p>
 
-  </div>
-</details>
+<div class="gallery">
+
+  <a href="https://example.com/art1" target="_blank" class="card">
+    <img src="/images/art1.jpg" alt="The Lovers – René Magritte">
+    <div class="overlay">The Lovers – René Magritte</div>
+  </a>
+
+  <a href="https://example.com/art2" target="_blank" class="card">
+    <img src="/images/art2.jpg" alt="Impression, Sunrise – Claude Monet">
+    <div class="overlay">Impression, Sunrise – Claude Monet</div>
+  </a>
+
+  <a href="https://example.com/art3" target="_blank" class="card">
+    <img src="/images/art3.jpg" alt="Untitled Film Still – Cindy Sherman">
+    <div class="overlay">Untitled Film Still – Cindy Sherman</div>
+  </a>
+
+</div>
 
 <style>
-.toggle summary {
-  cursor: pointer;
+.section-title {
   font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 8px;
-  margin-bottom: 5px;
-  color: white;
-}
-.toggle div {
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  background: #f7f7f7;
-  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-/* cores */
-.books { background: #6B705C; }
-.films { background: #A5A58D; }
-.music { background: #B7B7A4; }
-.art { background: #CB997E; }
+.category {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.items {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* destaque */
+.highlight {
+  margin-bottom: 15px;
+}
+
+.highlight em {
+  font-style: italic;
+  font-size: 1.05em;
+}
+
+.note {
+  font-size: 0.85em;
+  color: #666;
+}
 
 /* galeria */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
   display: block;
 }
 
 .card img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
-  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -144,7 +141,7 @@ author_profile: true
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   color: white;
   font-size: 0.9em;
@@ -156,11 +153,12 @@ author_profile: true
   opacity: 1;
 }
 
-.note {
-  font-size: 0.85em;
-  color: #666;
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-a { color: #333; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 </style>
