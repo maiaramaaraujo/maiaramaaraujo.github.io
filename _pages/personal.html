@@ -13,78 +13,111 @@ author_profile: true
 
 <hr />
 
-<!-- JOURNAL WRAPPER -->
-<div class="journal">
+<div class="main-grid">
 
-<p class="section-title">Art & Media</p>
+  <!-- LEFT: JOURNAL -->
+  <div class="journal">
 
-<p class="category">Artists & Albums</p>
-<p class="items">
-<a href="#">The Definition – Jon Bellion</a> •
-<a href="#">Everybody – Logic</a> •
-<a href="#">Change of Scenery II – Quinn XCII</a> •
-<a href="#">Brol La Suite – Angèle</a> •
-<a href="#">Rainbow Mixtape – COIN</a>
-</p>
+    <p class="section-title">Art & Media</p>
 
-<p class="highlight">
-<em><a href="#">Pink Moon – Nick Drake</a></em><br>
-<span class="note">quiet, introspective, and somehow always exactly enough</span>
-</p>
+    <p class="category">Artists & Albums</p>
+    <p class="items">
+    <a href="#">The Definition – Jon Bellion</a> •
+    <a href="#">Everybody – Logic</a> •
+    <a href="#">Change of Scenery II – Quinn XCII</a> •
+    <a href="#">Brol La Suite – Angèle</a> •
+    <a href="#">Rainbow Mixtape – COIN</a>
+    </p>
 
-<p class="category">Film</p>
-<p class="items">
-<a href="#">La La Land</a> •
-<a href="#">A Quiet Place</a> •
-<a href="#">Good Will Hunting</a> •
-<a href="#">Spirited Away</a>
-</p>
+    <p class="highlight">
+    <em><a href="#">Pink Moon – Nick Drake</a></em><br>
+    <span class="note">quiet, introspective, and somehow always exactly enough</span>
+    </p>
 
-<p class="highlight">
-<em><a href="#">Arrival</a></em><br>
-<span class="note">language, time, and the way meaning reshapes perception</span>
-</p>
+    <p class="category">Film</p>
+    <p class="items">
+    <a href="#">La La Land</a> •
+    <a href="#">A Quiet Place</a> •
+    <a href="#">Good Will Hunting</a> •
+    <a href="#">Spirited Away</a>
+    </p>
 
-<p class="category">Literature</p>
-<p class="items">
-<a href="#">Anne of Green Gables – Lucy Maud Montgomery</a> •
-<a href="#">The Haunting of Hill House – Shirley Jackson</a>
-</p>
+    <p class="highlight">
+    <em><a href="#">Arrival</a></em><br>
+    <span class="note">language, time, and the way meaning reshapes perception</span>
+    </p>
 
-<p class="highlight">
-<em><a href="#">The Stranger – Albert Camus</a></em><br>
-<span class="note">minimalism, detachment, and uncomfortable clarity</span>
-</p>
+    <p class="category">Literature</p>
+    <p class="items">
+    <a href="#">Anne of Green Gables – Lucy Maud Montgomery</a> •
+    <a href="#">The Haunting of Hill House – Shirley Jackson</a>
+    </p>
 
-</div>
+    <p class="highlight">
+    <em><a href="#">The Stranger – Albert Camus</a></em><br>
+    <span class="note">minimalism, detachment, and uncomfortable clarity</span>
+    </p>
 
-<hr />
+  </div>
 
-<p class="section-title visual">Visual Inspirations</p>
+  <!-- RIGHT: GALLERY -->
+  <div class="visual-column">
 
-<div class="gallery-masonry">
+    <p class="section-title">Visual Inspirations</p>
 
-  <a href="https://example.com/art1" target="_blank" class="card">
-    <img src="/images/altar.jpg" alt="Altar – Adriana Varejão">
-    <div class="overlay">Altar – Adriana Varejão, 1987</div>
-  </a>
+    <div class="gallery-masonry">
 
-  <a href="https://example.com/art2" target="_blank" class="card">
-    <img src="/images/Lydia_Clark.webp" alt="Lygia Clark">
-    <div class="overlay">Lygia Clark, 1965</div>
-  </a>
+      <a href="#" class="card">
+        <img src="/images/altar.jpg">
+        <div class="overlay">Altar – Adriana Varejão</div>
+      </a>
 
-  <a href="https://example.com/art3" target="_blank" class="card">
-    <img src="/images/art3.jpg" alt="Cindy Sherman">
-    <div class="overlay">Untitled Film Still – Cindy Sherman</div>
-  </a>
+      <a href="#" class="card">
+        <img src="/images/Lydia_Clark.webp">
+        <div class="overlay">Lygia Clark</div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="/images/art3.jpg">
+        <div class="overlay">Untitled Film Still – Cindy Sherman</div>
+      </a>
+
+    </div>
+
+  </div>
 
 </div>
 
 <style>
+
+/* ===== EXPAND PAGE WIDTH (Academic Pages override) ===== */
+.page {
+  max-width: 1500px;
+}
+
+.page__inner-wrap {
+  max-width: 1500px;
+}
+
+.layout--single .page__inner-wrap {
+  max-width: 1500px;
+}
+
+/* ===== GRID (creates 2 columns inside main content) ===== */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+}
+
+/* ===== JOURNAL STYLE ===== */
+.journal {
+  border-left: 2px solid #e5e5e5;
+  padding-left: 18px;
+}
+
 .section-title {
   font-weight: bold;
-  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 1.1em;
 }
@@ -92,30 +125,14 @@ author_profile: true
 .category {
   font-weight: 600;
   margin-top: 10px;
-  margin-bottom: 5px;
 }
 
-/* JOURNAL FEEL */
-.journal {
-  border-left: 2px solid #e5e5e5;
-  padding-left: 18px;
-  margin-bottom: 10px;
-}
-
-/* texto */
 .items {
-  margin-bottom: 8px;
   line-height: 1.7;
 }
 
-/* destaque */
 .highlight {
   margin-bottom: 18px;
-}
-
-.highlight em {
-  font-style: italic;
-  font-size: 1.05em;
 }
 
 .note {
@@ -123,37 +140,34 @@ author_profile: true
   color: #666;
 }
 
-/* VISUAL TITLE */
-.visual {
-  margin-top: 30px;
+/* ===== GALLERY COLUMN ===== */
+.visual-column {
+  position: sticky;
+  top: 20px;
+
+  /* 🔥 THIS CREATES THE "INVASION" EFFECT */
+  margin-right: -120px;
 }
 
-/* MASONRY GALLERY */
+/* ===== MASONRY ===== */
 .gallery-masonry {
-  column-count: 3;
-  column-gap: 15px;
-  margin-top: 15px;
+  column-count: 2;
+  column-gap: 12px;
 }
 
-.gallery-masonry .card {
+.card {
   display: inline-block;
   width: 100%;
-  margin-bottom: 15px;
-  border-radius: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
 
-.gallery-masonry img {
+.card img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-masonry .card:hover img {
-  transform: scale(1.03);
 }
 
 /* overlay */
@@ -161,31 +175,31 @@ author_profile: true
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 8px;
+  background: rgba(0,0,0,0.6);
   color: white;
-  font-size: 0.85em;
+  font-size: 0.8em;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: 0.3s;
 }
 
-.gallery-masonry .card:hover .overlay {
+.card:hover .overlay {
   opacity: 1;
 }
 
-/* responsivo */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .gallery-masonry {
-    column-count: 2;
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-column {
+    position: static;
+    margin-right: 0;
   }
 }
 
-@media (max-width: 500px) {
-  .gallery-masonry {
-    column-count: 1;
-  }
-}
-
+/* ===== LINKS ===== */
 a {
   color: #333;
   text-decoration: none;
@@ -194,4 +208,5 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 </style>
