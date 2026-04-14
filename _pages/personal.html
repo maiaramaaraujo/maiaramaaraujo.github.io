@@ -7,6 +7,104 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="wordwrap">
+<p>A small collection of books, films, music, and artworks that inspire me and shape how I think about science, creativity, and the world.</p>
+</div>
+
+<hr />
+
+<!-- Books -->
+<details class="toggle">
+  <summary class="books">Books</summary>
+  <div>
+    <ul>
+      <li>
+        <a href="#">Thinking, Fast and Slow – Daniel Kahneman</a>
+        <br><span class="note">On decision-making and cognition</span>
+      </li>
+      <li>
+        <a href="#">The Stranger – Albert Camus</a>
+        <br><span class="note">Minimalism and existential perspective</span>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<!-- Films -->
+<details class="toggle">
+  <summary class="films">Films</summary>
+  <div>
+    <ul>
+      <li>
+        <a href="#">Her (2013)</a>
+        <br><span class="note">Human–machine relationships</span>
+      </li>
+      <li>
+        <a href="#">Arrival (2016)</a>
+        <br><span class="note">Language and perception</span>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<!-- Music -->
+<details class="toggle">
+  <summary class="music">Music</summary>
+  <div>
+    <ul>
+      <li>
+        <a href="#">Nick Drake – Pink Moon</a>
+        <br><span class="note">Quiet, introspective atmosphere</span>
+      </li>
+      <li>
+        <a href="#">Bon Iver – Holocene</a>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<!-- Art -->
+<details class="toggle">
+  <summary class="art">Art</summary>
+  <div>
+    <ul>
+      <li>
+        <a href="#">The Lovers – René Magritte</a>
+      </li>
+      <li>
+        <a href="#">Impression, Sunrise – Claude Monet</a>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<style>
+.toggle summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  color: white;
+}
+.toggle div {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+/* cores suaves diferentes das científicas */
+.books { background: #6B705C; }
+.films { background: #A5A58D; }
+.music { background: #B7B7A4; }
+.art { background: #CB997E; }
+
+.note {
+  font-size: 0.85em;
+  color: #666;
+}
+
+a { color: #333; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
