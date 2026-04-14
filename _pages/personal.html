@@ -8,7 +8,8 @@ author_profile: true
 {% include base_path %}
 
 <div class="wordwrap">
-<p>A small collection of books, films, music, and artworks that inspire me and shape how I think about science, creativity, and the world.</p>
+<p>Although science is how I hope to change the world, art is what first made me fall in love with understanding it.</p>
+<p>Here is a small collection of what has kept me inspired :)..</p>
 </div>
 
 <hr />
@@ -63,18 +64,30 @@ author_profile: true
   </div>
 </details>
 
-<!-- Art -->
+<!-- Art + Gallery -->
 <details class="toggle">
   <summary class="art">Art</summary>
   <div>
-    <ul>
-      <li>
-        <a href="#">The Lovers – René Magritte</a>
-      </li>
-      <li>
-        <a href="#">Impression, Sunrise – Claude Monet</a>
-      </li>
-    </ul>
+
+    <div class="gallery">
+
+      <a href="https://example.com/art1" target="_blank" class="card">
+        <img src="/images/art1.jpg" alt="The Lovers – René Magritte">
+        <div class="overlay">The Lovers – René Magritte</div>
+      </a>
+
+      <a href="https://example.com/art2" target="_blank" class="card">
+        <img src="/images/art2.jpg" alt="Impression, Sunrise – Claude Monet">
+        <div class="overlay">Impression, Sunrise – Claude Monet</div>
+      </a>
+
+      <a href="https://example.com/art3" target="_blank" class="card">
+        <img src="/images/art3.jpg" alt="Pink Moon – Nick Drake">
+        <div class="overlay">Pink Moon – Nick Drake</div>
+      </a>
+
+    </div>
+
   </div>
 </details>
 
@@ -88,17 +101,60 @@ author_profile: true
   color: white;
 }
 .toggle div {
-  padding: 10px 15px;
+  padding: 12px 15px;
   margin-bottom: 15px;
   background: #f7f7f7;
   border-radius: 8px;
 }
 
-/* cores suaves diferentes das científicas */
+/* cores */
 .books { background: #6B705C; }
 .films { background: #A5A58D; }
 .music { background: #B7B7A4; }
 .art { background: #CB997E; }
+
+/* galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  font-size: 0.9em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
 
 .note {
   font-size: 0.85em;
