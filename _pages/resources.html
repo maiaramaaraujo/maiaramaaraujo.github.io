@@ -14,57 +14,61 @@ author_profile: true
 <hr />
 
 <!-- Computational Neuroscience -->
-<details class="toggle">
-  <summary class="neuro">Computational Neuroscience and Cognitive Science</summary>
-  <div>
+<div class="section">
+  <div class="section-title neuro">Computational Neuroscience and Cognitive Science</div>
+  <div class="section-content">
     <ul>
       <li><a href="#">EEG preprocessing tutorial (MNE-Python)</a></li>
       <li><a href="#">Article: Beta-band activity during motor tasks</a></li>
       <li><a href="#">Feature extraction for cognitive neuroscience</a></li>
     </ul>
   </div>
-</details>
+</div>
 
 <!-- XAI -->
-<details class="toggle">
-  <summary class="ml">Explainable Artificial Intelligence (XAI)</summary>
-  <div>
+<div class="section">
+  <div class="section-title ml">Explainable Artificial Intelligence (XAI)</div>
+  <div class="section-content">
     <ul>
       <li><a href="#">Explainable AI for clinicians – overview</a></li>
       <li><a href="#">Contrastive learning resources</a></li>
       <li><a href="#">Jupyter notebooks for classification models</a></li>
     </ul>
   </div>
-</details>
+</div>
 
 <!-- Language -->
-<details class="toggle">
-  <summary class="ling">Language, Speech and Neural Processing</summary>
-  <div>
+<div class="section">
+  <div class="section-title ling">Language, Speech and Neural Processing</div>
+  <div class="section-content">
     <ul>
       <li><a href="#">Phonological processing & EEG review</a></li>
       <li><a href="#">Prosody and neural markers</a></li>
       <li><a href="#">Language models for linguistic analysis</a></li>
     </ul>
   </div>
-</details>
+</div>
 
 <style>
-.toggle summary {
-  cursor: pointer;
+.section {
+  margin-bottom: 25px;
+}
+
+.section-title {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
-  margin-bottom: 5px;
   color: white;
+  margin-bottom: 5px;
 }
-.toggle div {
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  background: #fafafa;
+
+.section-content {
+  padding: 12px 15px;
+  background: #f2f2f2;
   border-radius: 8px;
 }
 
+/* mesmas cores */
 .neuro { background: #B9B07B; }
 .ml { background: #BA7770; }
 .ling { background: #EDCE91; }
