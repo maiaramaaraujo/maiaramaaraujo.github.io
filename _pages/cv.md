@@ -12,10 +12,7 @@ redirect_from:
 <!-- CV ACTIONS -->
 <div class="cv-actions">
 
-  <span class="cv-action-group">
-    <button onclick="window.print()" class="cv-btn">Print CV</button>
-    <a href="/files/cv_en.pdf" target="_blank" class="cv-btn">PDF</a>
-  </span>
+  <span class="cv-btn-label">CV</span>
 
   <span class="cv-divider">|</span>
 
@@ -43,7 +40,7 @@ Work experience
 
   <details>
     <summary>
-      <span class="cv-title">AI Researcher</span> — TecGraf, PUC-Rio (Dec 2025 – Present)
+      <span class="cv-role">AI Researcher</span> — <span class="cv-meta">TecGraf, PUC-Rio (Dec 2025 – Present)</span>
     </summary>
     <div class="cv-content">
       <ul>
@@ -56,7 +53,7 @@ Work experience
 
   <details>
     <summary>
-      <span class="cv-title">AI Research Intern</span> — iCEIS, Recife (Sep 2024 – Aug 2025)
+      <span class="cv-role">AI Research Intern</span> — <span class="cv-meta">iCEIS, Recife (Sep 2024 – Aug 2025)</span>
     </summary>
     <div class="cv-content">
       <ul>
@@ -70,7 +67,7 @@ Work experience
 
   <details>
     <summary>
-      <span class="cv-title">Research Intern in Neuroengineering</span> — Institut de Neurosciences de la Timone, Marseille (Feb 2024 – May 2024)
+      <span class="cv-role">Research Intern in Neuroengineering</span> — <span class="cv-meta">Institut de Neurosciences de la Timone, Marseille (Feb 2024 – May 2024)</span>
     </summary>
     <div class="cv-content">
       <ul>
@@ -82,7 +79,7 @@ Work experience
 
   <details>
     <summary>
-      <span class="cv-title">Product Owner & Co-founder</span> — Habitus Tech, Recife (Jul 2022 – Jul 2024)
+      <span class="cv-role">Product Owner & Co-founder</span> — <span class="cv-meta">Habitus Tech, Recife (Jul 2022 – Jul 2024)</span>
     </summary>
     <div class="cv-content">
       <ul>
@@ -95,20 +92,17 @@ Work experience
 
 </div>
 
+Research interests
+======
+Computational Neuroscience | EEG | Language Processing | Explainable AI | Cognitive Modeling
+
 Skills
 ======
-* Computational Neuroscience  
-* Python (NumPy, Pandas, Scikit-learn, PyTorch)  
-* Signal Processing (EEG, EMG)  
-* Machine Learning & Deep Learning  
-* Data Analysis  
-* SQL, Git, Jupyter  
+Python | Machine Learning | Deep Learning | Signal Processing (EEG, EMG) | Data Analysis | SQL | Git | Jupyter
 
 Languages
 ======
-* English (C2)  
-* French (B2 – DELF)  
-* Spanish (B2 – SIELE)  
+English (C2) | French (B2 – DELF) | Spanish (B2 – SIELE)
 
 <style>
 .cv-section details {
@@ -119,9 +113,16 @@ Languages
   cursor: pointer;
 }
 
-.cv-title {
-  color: #2e7d32;
+/* ROLE (preto, negrito) */
+.cv-role {
   font-weight: bold;
+  color: #000;
+}
+
+/* META (italico) */
+.cv-meta {
+  font-style: italic;
+  color: #555;
 }
 
 .cv-content {
@@ -134,35 +135,24 @@ Languages
   padding-left: 18px;
 }
 
-/* KEYWORD HIGHLIGHT */
+/* KEYWORDS */
 .highlight {
   color: #2e7d32;
   font-weight: 600;
 }
 
-/* CV ACTIONS */
+/* ACTIONS */
 .cv-actions {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
-.cv-btn {
-  background: none;
-  border: 1px solid #2e7d32;
+.cv-btn-label {
+  font-weight: bold;
   color: #2e7d32;
-  padding: 4px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.cv-btn:hover {
-  background: #2e7d32;
-  color: white;
 }
 
 .cv-lang {
@@ -210,6 +200,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     item.innerHTML = text;
   });
+
+});
+</script>
 
 });
 </script>
