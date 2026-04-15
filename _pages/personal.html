@@ -4,6 +4,7 @@ title: "personal"
 permalink: /personal/
 author_profile: true
 ---
+
 {% include base_path %}
 
 <div class="wordwrap">
@@ -22,40 +23,49 @@ author_profile: true
 
     <p class="category">Artists & Albums</p>
     <p class="items">
-    <a href="#">The Definition – Jon Bellion</a> •
-    <a href="#">Everybody – Logic</a> •
-    <a href="#">Change of Scenery II – Quinn XCII</a> •
-    <a href="#">Brol La Suite – Angèle</a> •
-    <a href="#">Rainbow Mixtape – COIN</a>
+      <a href="https://example.com/jon-bellion" class="media-link">The Definition – Jon Bellion</a> •
+      <a href="https://example.com/logic-everybody" class="media-link">Everybody – Logic</a> •
+      <a href="https://example.com/quinn-xcii" class="media-link">Change of Scenery II – Quinn XCII</a> •
+      <a href="https://example.com/angele-brol" class="media-link">Brol La Suite – Angèle</a> •
+      <a href="https://example.com/coin" class="media-link">Rainbow Mixtape – COIN</a>
     </p>
 
+    <!-- NEW SPACE -->
+    <p class="description-space"></p>
+
     <p class="highlight">
-    <em><a href="#">Pink Moon – Nick Drake</a></em><br>
-    <span class="note">quiet, introspective, and somehow always exactly enough</span>
+      <em><a href="https://example.com/nick-drake" class="media-link">Pink Moon – Nick Drake</a></em><br>
+      <span class="note">quiet, introspective, and somehow always exactly enough</span>
     </p>
 
     <p class="category">Film</p>
     <p class="items">
-    <a href="#">La La Land</a> •
-    <a href="#">A Quiet Place</a> •
-    <a href="#">Good Will Hunting</a> •
-    <a href="#">Spirited Away</a>
+      <a href="https://example.com/la-la-land" class="media-link">In the mood for love</a> •
+      <a href="https://example.com/a-quiet-place" class="media-link">Cléo de 5 à 7</a> •
+      <a href="https://example.com/good-will-hunting" class="media-link">Paris is Burning</a> •
+      <a href="https://example.com/spirited-away" class="media-link">La Chimera</a>
     </p>
 
+    <!-- NEW SPACE -->
+    <p class="description-space"></p>
+
     <p class="highlight">
-    <em><a href="#">Arrival</a></em><br>
-    <span class="note">language, time, and the way meaning reshapes perception</span>
+      <em><a href="https://example.com/arrival" class="media-link">Arrival</a></em><br>
+      <span class="note">language, time, and the way meaning reshapes perception</span>
     </p>
 
     <p class="category">Literature</p>
     <p class="items">
-    <a href="#">Anne of Green Gables – Lucy Maud Montgomery</a> •
-    <a href="#">The Haunting of Hill House – Shirley Jackson</a>
+      <a href="https://example.com/anne-of-green-gables" class="media-link">The princess of 72nd Street by Elaine Kraf</a> •
+      <a href="https://example.com/haunting-of-hill-house" class="media-link">Autobiography of Red by Anne Carson</a>
     </p>
 
+    <!-- NEW SPACE -->
+    <p class="description-space"></p>
+
     <p class="highlight">
-    <em><a href="#">The Stranger – Albert Camus</a></em><br>
-    <span class="note">minimalism, detachment, and uncomfortable clarity</span>
+      <em><a href="https://example.com/camus-stranger" class="media-link">Against Interpretation - Susan Sontag</a></em><br>
+      <span class="note">minimalism, detachment, and uncomfortable clarity</span>
     </p>
 
   </div>
@@ -90,7 +100,7 @@ author_profile: true
 
 <style>
 
-/* ===== EXPAND PAGE WIDTH (Academic Pages override) ===== */
+/* ===== PAGE WIDTH ===== */
 .page {
   max-width: 1500px;
 }
@@ -103,14 +113,14 @@ author_profile: true
   max-width: 1500px;
 }
 
-/* ===== GRID (creates 2 columns inside main content) ===== */
+/* ===== GRID ===== */
 .main-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 50px;
 }
 
-/* ===== JOURNAL STYLE ===== */
+/* ===== JOURNAL ===== */
 .journal {
   border-left: 2px solid #e5e5e5;
   padding-left: 18px;
@@ -140,16 +150,34 @@ author_profile: true
   color: #666;
 }
 
-/* ===== GALLERY COLUMN ===== */
+/* ===== NEW DESCRIPTION SPACE ===== */
+.description-space {
+  margin: 18px 0;
+  min-height: 18px;
+  border-bottom: 1px dashed #ddd;
+  opacity: 0.6;
+}
+
+/* ===== MEDIA LINKS ===== */
+.media-link {
+  color: #2e7d32;
+  font-style: italic;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.media-link:hover {
+  text-decoration: underline;
+  color: #1b5e20;
+}
+
+/* ===== GALLERY ===== */
 .visual-column {
   position: sticky;
   top: 20px;
-
-  /* 🔥 THIS CREATES THE "INVASION" EFFECT */
   margin-right: -120px;
 }
 
-/* ===== MASONRY ===== */
 .gallery-masonry {
   column-count: 2;
   column-gap: 12px;
