@@ -5,32 +5,91 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="wordwrap">
+  <p>These lists are updated periodically. You can also find my articles on 
+  <a href="{{site.author.googlescholar}}">Google Scholar</a>.</p>
+</div>
 
+<hr>
 
+<!-- PREPRINTS -->
+<h2>Preprints</h2>
+<hr>
 
+<div class="pub-item">
+  Wolna, A., Wright, A., Casto, C., Hutchinson, S., Lipkin, B., & Fedorenko, E. (2025).
+  The extended language network: Language selective brain areas whose contributions to language remain to be discovered.
+  <i>bioRxiv.</i>
+  <br>
+  <span class="pub-links">
+    <a href="#">ABS</a>
+    <a href="#">DOI</a>
+    <a href="#">PDF</a>
+    <a href="#">OSF</a>
+  </span>
+</div>
+
+<!-- PAPERS -->
+<h2>Papers</h2>
+<hr>
+
+<div class="pub-item">
+  Iltis, P. W., Frahm, J., Voit, D., Wright, A., & Dever, A. (2024).
+  A descriptive comparison of oral cavity movements between brass instrumentalists performing large interval slurs.
+  <i>Medical Problems of Performing Artists, 39(4), 169–176.</i>
+  <br>
+  <span class="pub-links">
+    <a href="#">ABS</a>
+    <a href="#">DOI</a>
+  </span>
+</div>
+
+<!-- POSTERS -->
+<h2>Posters & Presentations</h2>
+<hr>
+
+<div class="pub-item">
+  Wolna, A., Wright, A., Casto, C., Lipkin, B., & Fedorenko, E. (2025, March).
+  The extended language network: Language selective brain areas whose contributions to language remain to be discovered.
+  <i>McGovern Travel & Technology Awards Poster Session, Cambridge, MA.</i>
+  <br>
+  <span class="pub-links">
+    <a href="#">PDF</a>
+  </span>
+</div>
+
+<div class="pub-item">
+  Wolna, A., Wright, A., Wodniecka, Z., & Fedorenko, E. (2025, April).
+  From Words to Stories: Engagement of language-specific and domain-general neural mechanisms in native and second language comprehension.
+  <i>Annual Meeting of the Cognitive Neuroscience Society, Boston, MA.</i>
+  <br>
+  <span class="pub-links">
+    <a href="#">PDF</a>
+  </span>
+</div>
+
+<style>
+.pub-item {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.pub-links {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.pub-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #2e7d32; /* verde */
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+</style>
