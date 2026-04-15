@@ -21,52 +21,58 @@ author_profile: true
 
     <p class="section-title">Art & Media</p>
 
+    <!-- ===== ALBUMS (NO SPACE BELOW) ===== -->
     <p class="category">Artists & Albums</p>
-    <p class="items">
-      <a href="https://example.com/jon-bellion" class="media-link">The Definition – Jon Bellion</a> •
-      <a href="https://example.com/logic-everybody" class="media-link">Everybody – Logic</a> •
-      <a href="https://example.com/quinn-xcii" class="media-link">Change of Scenery II – Quinn XCII</a> •
-      <a href="https://example.com/angele-brol" class="media-link">Brol La Suite – Angèle</a> •
-      <a href="https://example.com/coin" class="media-link">Rainbow Mixtape – COIN</a>
-    </p>
-
-    <!-- NEW SPACE -->
-    <p class="description-space"></p>
-
-    <p class="highlight">
-      <em><a href="https://example.com/nick-drake" class="media-link">Pink Moon – Nick Drake</a></em><br>
-      <span class="note">quiet, introspective, and somehow always exactly enough</span>
+    <p class="items inline-items">
+      • <a href="https://example.com/jon-bellion" class="media-link">The Definition – Jon Bellion</a>
+      • <a href="https://example.com/logic-everybody" class="media-link">Everybody – Logic</a>
+      • <a href="https://example.com/quinn-xcii" class="media-link">Change of Scenery II – Quinn XCII</a>
+      • <a href="https://example.com/angele-brol" class="media-link">Brol La Suite – Angèle</a>
+      • <a href="https://example.com/coin" class="media-link">Rainbow Mixtape – COIN</a>
     </p>
 
     <p class="category">Film</p>
-    <p class="items">
-      <a href="https://example.com/la-la-land" class="media-link">In the mood for love</a> •
-      <a href="https://example.com/a-quiet-place" class="media-link">Cléo de 5 à 7</a> •
-      <a href="https://example.com/good-will-hunting" class="media-link">Paris is Burning</a> •
-      <a href="https://example.com/spirited-away" class="media-link">La Chimera</a>
-    </p>
 
-    <!-- NEW SPACE -->
-    <p class="description-space"></p>
+    <div class="list-block">
+      <p class="items">
+        • <a href="https://example.com/in-the-mood-for-love" class="media-link">In the Mood for Love</a>
+      </p>
+      <p class="description-space"></p>
 
-    <p class="highlight">
-      <em><a href="https://example.com/arrival" class="media-link">Arrival</a></em><br>
-      <span class="note">language, time, and the way meaning reshapes perception</span>
-    </p>
+      <p class="items">
+        • <a href="https://example.com/cleo-5-a-7" class="media-link">Cléo de 5 à 7</a>
+      </p>
+      <p class="description-space"></p>
+
+      <p class="items">
+        • <a href="https://example.com/paris-is-burning" class="media-link">Paris is Burning</a>
+      </p>
+      <p class="description-space"></p>
+
+      <p class="items">
+        • <a href="https://example.com/la-chimera" class="media-link">La Chimera</a>
+      </p>
+      <p class="description-space"></p>
+    </div>
 
     <p class="category">Literature</p>
-    <p class="items">
-      <a href="https://example.com/anne-of-green-gables" class="media-link">The princess of 72nd Street by Elaine Kraf</a> •
-      <a href="https://example.com/haunting-of-hill-house" class="media-link">Autobiography of Red by Anne Carson</a>
-    </p>
 
-    <!-- NEW SPACE -->
-    <p class="description-space"></p>
+    <div class="list-block">
+      <p class="items">
+        • <a href="https://example.com/princess-72nd-street" class="media-link">The Princess of 72nd Street – Elaine Kraf</a>
+      </p>
+      <p class="description-space"></p>
 
-    <p class="highlight">
-      <em><a href="https://example.com/camus-stranger" class="media-link">Against Interpretation - Susan Sontag</a></em><br>
-      <span class="note">minimalism, detachment, and uncomfortable clarity</span>
-    </p>
+      <p class="items">
+        • <a href="https://example.com/autobiography-of-red" class="media-link">Autobiography of Red – Anne Carson</a>
+      </p>
+      <p class="description-space"></p>
+
+      <p class="items">
+        • <a href="https://example.com/against-interpretation" class="media-link">Against Interpretation – Susan Sontag</a>
+      </p>
+      <p class="description-space"></p>
+    </div>
 
   </div>
 
@@ -137,24 +143,24 @@ author_profile: true
   margin-top: 10px;
 }
 
+/* ===== ITEMS ===== */
 .items {
   line-height: 1.7;
 }
 
-.highlight {
+.inline-items {
+  line-height: 1.7;
+}
+
+.list-block {
   margin-bottom: 18px;
 }
 
-.note {
-  font-size: 0.85em;
-  color: #666;
-}
-
-/* ===== NEW DESCRIPTION SPACE ===== */
+/* ===== DESCRIPTION SPACE ===== */
 .description-space {
-  margin: 18px 0;
-  min-height: 18px;
-  border-bottom: 1px dashed #ddd;
+  min-height: 14px;
+  margin: 6px 0 14px 18px;
+  border-left: 1px dashed #ddd;
   opacity: 0.6;
 }
 
