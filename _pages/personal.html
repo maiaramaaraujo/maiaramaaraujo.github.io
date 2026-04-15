@@ -26,11 +26,10 @@ author_profile: true
     <p class="items inline-items">
       • <a href="https://open.spotify.com/intl-pt/album/4SN55bwEnC0T1qmBTWZeyW" class="media-link">Doin It!!!! - The Equatics</a>
       • <a href="https://open.spotify.com/intl-pt/album/1vz94WpXDVYIEGja8cjFNa" class="media-link">Blue – Joni Mitchell</a>
-      • <a href="https://open.spotify.com/intl-pt/album/3geZAccbzXDfsQf3R2gGu1" class="media-link">Mel - Maria Bethânia </a>
+      • <a href="https://open.spotify.com/intl-pt/album/3geZAccbzXDfsQf3R2gGu1" class="media-link">Mel - Maria Bethânia</a>
       • <a href="https://open.spotify.com/intl-pt/album/0fdD8bSIoORVTtQ7R5YdOE" class="media-link">Tango in the Night – Fleetwood Mac</a>
       • <a href="https://open.spotify.com/intl-pt/album/6y64gP67AegGu2rspM2GHo" class="media-link">Step II - Sylvester</a>
       • <a href="https://open.spotify.com/intl-pt/album/5rcMJNWebtl2r2S18Je1A0" class="media-link">A Tábua de Esmeralda - Jorge Ben Jor</a>
-
     </p>
 
     <p class="category">Film</p>
@@ -47,19 +46,22 @@ author_profile: true
     <div class="list-block">
       <p class="items">• <a href="https://www.goodreads.com/book/show/199454309-the-princess-of-72nd-street" class="media-link">The Princess of 72nd Street – Elaine Kraf</a></p>
       <p class="items">• <a href="https://www.goodreads.com/book/show/61049.Autobiography_of_Red" class="media-link">Autobiography of Red – Anne Carson</a></p>
-      <p class="items">• <a href="https://www.goodreads.com/book/show/6335913-against-interpretation-and-other-essays" class="media-link">Against Interpretation – Susan Sontag</a></p>    </div>
-      <p class="items">• <a href="https://www.goodreads.com/book/show/28501523-mrs-dalloway" class="media-link">Mrs Dalloway - Virginia Woolf</a></p>    </div>
+      <p class="items">• <a href="https://www.goodreads.com/book/show/6335913-against-interpretation-and-other-essays" class="media-link">Against Interpretation – Susan Sontag</a></p>
+      <p class="items">• <a href="https://www.goodreads.com/book/show/28501523-mrs-dalloway" class="media-link">Mrs Dalloway - Virginia Woolf</a></p>
+    </div>
 
   </div>
+
+  <!-- MIDDLE SPACER (creates “3 column feel”) -->
+  <div class="spacer-column"></div>
 
   <!-- RIGHT: GALLERY -->
   <div class="visual-column">
 
     <p class="section-title">Visual Inspirations</p>
 
-    <!-- NEW SPACE ADDED HERE -->
-    <p class="description-space"></p>
-    I have always loved visiting museums and observing how shapes, colors, and textures are used to tell stories about our feelings and the world around us. More recently, I have started taking sculpture classes, which have made me especially fascinated with them. Here are a few of my favorites:
+    <p class="description-space">
+      I have always loved visiting museums and observing how shapes, colors, and textures are used to tell stories about our feelings and the world around us. More recently, I have started taking sculpture classes, which have made me especially fascinated with them. Here are a few of my favorites:
     </p>
 
     <div class="gallery-masonry">
@@ -76,17 +78,17 @@ author_profile: true
 
       <a href="https://www.centrepompidou.fr/es/ressources/oeuvre/cXk6Me" class="card">
         <img src="/images/Amphion.jpg">
-        <div class="overlay">Amphion by Henri Laurens, 1885</div>
+        <div class="overlay">Amphion - Henri Laurens, 1885</div>
       </a>
 
       <a href="https://www.musee-orangerie.fr/fr/collection/les-nympheas-de-claude-monet" class="card">
         <img src="/images/Nymphéas.jpeg">
-        <div class="overlay">Les Nymphéas by Claude Monet</div>
+        <div class="overlay">Les Nymphéas – Monet</div>
       </a>
 
       <a href="https://www.hockney.com/home" class="card">
         <img src="/images/Tyler Dining Room.jpeg">
-        <div class="overlay">Tyler Dining Room by David Hockney</div>
+        <div class="overlay">David Hockney</div>
       </a>
 
     </div>
@@ -98,23 +100,22 @@ author_profile: true
 <style>
 
 /* ===== PAGE WIDTH ===== */
-.page {
-  max-width: 1500px;
-}
-
-.page__inner-wrap {
-  max-width: 1500px;
-}
-
+.page,
+.page__inner-wrap,
 .layout--single .page__inner-wrap {
   max-width: 1500px;
 }
 
-/* ===== GRID ===== */
+/* ===== 3-COLUMN GRID ===== */
 .main-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 50px;
+  grid-template-columns: 1.2fr 0.3fr 0.9fr;
+  gap: 40px;
+}
+
+/* middle spacer */
+.spacer-column {
+  width: 100%;
 }
 
 /* ===== JOURNAL ===== */
@@ -142,16 +143,12 @@ author_profile: true
   line-height: 1.7;
 }
 
-.list-block {
-  margin-bottom: 18px;
-}
-
-/* ===== DESCRIPTION SPACE ===== */
+/* ===== DESCRIPTION ===== */
 .description-space {
-  min-height: 14px;
-  margin: 6px 0 14px 18px;
-  border-left: 1px dashed #ddd;
-  opacity: 0.6;
+  margin: 10px 0 18px 0;
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
 }
 
 /* ===== MEDIA LINKS ===== */
@@ -159,7 +156,6 @@ author_profile: true
   color: #2e7d32;
   font-style: italic;
   text-decoration: none;
-  transition: 0.2s ease;
 }
 
 .media-link:hover {
@@ -171,7 +167,6 @@ author_profile: true
 .visual-column {
   position: sticky;
   top: 20px;
-  margin-right: -120px;
 }
 
 .gallery-masonry {
@@ -190,7 +185,6 @@ author_profile: true
 
 .card img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -217,9 +211,8 @@ author_profile: true
     grid-template-columns: 1fr;
   }
 
-  .visual-column {
-    position: static;
-    margin-right: 0;
+  .spacer-column {
+    display: none;
   }
 }
 
