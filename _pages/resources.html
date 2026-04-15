@@ -140,51 +140,95 @@ a:hover { text-decoration: underline; }
 
 </div>
 
+<br>
+<b>Beyond my research scope</b>
+<hr>
+
+<div class="extra-section-intro">
+  <p>
+    Alongside my main research interests, I also explore a broader range of materials.
+    Below is a curated collection of articles, books, and media that I found intellectually stimulating — even when they fall outside my immediate research scope.
+    Topics are indicated through color-coded tags.
+  </p>
+</div>
+
+<div class="resource-table">
+
+  <div class="resource-item">
+    <span class="resource-type">[article]</span>
+    <a href="#">Digital archives and cultural memory</a>
+    <span class="tag dh">digital humanities</span>
+    <span class="tag culture">culture</span>
+  </div>
+
+  <div class="resource-item">
+    <span class="resource-type">[book]</span>
+    <a href="#">The alignment problem</a>
+    <span class="tag ai">AI ethics</span>
+    <span class="tag moral">moral AI</span>
+  </div>
+
+  <div class="resource-item">
+    <span class="resource-type">[video]</span>
+    <a href="#">AI in healthcare systems</a>
+    <span class="tag health">healthtech</span>
+    <span class="tag ai">AI</span>
+  </div>
+
+  <div class="resource-item">
+    <span class="resource-type">[article]</span>
+    <a href="#">Language and power in digital spaces</a>
+    <span class="tag dh">digital humanities</span>
+    <span class="tag language">language</span>
+  </div>
+
+</div>
+
 <style>
-.extra-section-intro {
-  margin-bottom: 20px;
-  max-width: 800px;
+.resource-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.extra-sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+.resource-item {
+  background: #f5f5f5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95em;
 }
 
-.extra-card {
-  border-radius: 10px;
-  overflow: hidden;
+.resource-type {
+  color: #777;
+  margin-right: 8px;
+  font-family: monospace;
 }
 
-.extra-title {
-  font-weight: bold;
-  padding: 10px 15px;
+.resource-item a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.resource-item a:hover {
+  text-decoration: underline;
+}
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  margin-left: 5px;
+  border-radius: 6px;
+  font-size: 0.75em;
   color: white;
 }
 
-/* cores suaves e acadêmicas */
-.articles { background: #7A9E9F; }
-.books { background: #A07A99; }
-.videos { background: #8AA17B; }
-.misc { background: #C2A878; }
-
-.extra-content {
-  background: #f5f5f5;
-  padding: 12px 15px;
-}
-
-.extra-content ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.extra-content a {
-  color: #333;
-  text-decoration: none;
-}
-
-.extra-content a:hover {
-  text-decoration: underline;
-}
+/* cores por tema */
+.dh { background: #7A9E9F; }        /* digital humanities */
+.health { background: #8AA17B; }    /* healthtech */
+.ai { background: #6c71c4; }        /* AI */
+.moral { background: #BA7770; }     /* moral AI */
+.language { background: #859901; }  /* language */
+.culture { background: #f4a825; }   /* culture */
 </style>
